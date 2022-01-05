@@ -96,6 +96,14 @@ class _ChatScreenState extends State<ChatScreen> {
           'assets/cpes.svg',
           width: 75,
         ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Auth().logout(context);
+            },
+            icon: Icon(Icons.logout),
+          )
+        ],
       ),
       body: Column(
         children: [
